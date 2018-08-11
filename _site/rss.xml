@@ -3,10 +3,10 @@
   <channel>
     <title>Amos Jekyll Blog</title>
     <description>Record my learning and reading.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 11 Aug 2018 17:46:25 +0800</pubDate>
-    <lastBuildDate>Sat, 11 Aug 2018 17:46:25 +0800</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 11 Aug 2018 17:57:22 +0800</pubDate>
+    <lastBuildDate>Sat, 11 Aug 2018 17:57:22 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -98,8 +98,8 @@
 
 </description>
         <pubDate>Sat, 11 Aug 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/08/11/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E8%AE%B0%E5%BD%95.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/11/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E8%AE%B0%E5%BD%95.html</guid>
+        <link>/2018/08/11/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E8%AE%B0%E5%BD%95.html</link>
+        <guid isPermaLink="true">/2018/08/11/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E8%AE%B0%E5%BD%95.html</guid>
         
         <category>arithmetic</category>
         
@@ -197,8 +197,8 @@
 
 </description>
         <pubDate>Sat, 11 Aug 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/08/11/Angular%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/11/Angular%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.html</guid>
+        <link>/2018/08/11/Angular%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.html</link>
+        <guid isPermaLink="true">/2018/08/11/Angular%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.html</guid>
         
         <category>Angular</category>
         
