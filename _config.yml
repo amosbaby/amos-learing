@@ -9,7 +9,7 @@ baseurl: ''
 
 # Navigation links
 nav:
-  home: '/'
+  home: '/amos-learing'
   tags: '/tags.html'
 
 # Footer
