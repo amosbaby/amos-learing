@@ -2,7 +2,7 @@
 title: 'Amos Jekyll Blog'
 description: 'Record my learning and reading.'
 keyword: 'Amos, iOS, Angular, ionic, js, css, web'
-url: '' # your host
+url: 'https://amosbaby.github.io/amos-learing/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
