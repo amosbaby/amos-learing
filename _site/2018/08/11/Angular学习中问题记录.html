@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular学习中问题记录 - Amos Jekyll Blog</title>
+    <meta name="author"  content="AmosLee">
+    <meta name="description" content="Angular学习中问题记录">
+    <meta name="keywords"  content="Angular">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Angular学习中问题记录 - Amos Jekyll Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/2018/08/11/Angular%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.html">
+    <meta property="og:description" content="Record my learning and reading.">
+    <meta property="og:site_name" content="Amos Jekyll Blog">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!--
+Author: Ray-Eldath
+refer to:
+ - http://docs.mathjax.org/en/latest/options/index.html
+-->
+
+	<script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+	
+    <!--
+Author: Ray-Eldath
+-->
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+
+<body>
+  <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+  <input id="nm-switch" type="hidden" value="true"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/tags.html">tags</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+  <header class="g-banner post-header post-pattern-circuitBoard bgcolor-default " data-theme="default">
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+          
+            <a href="http://localhost:4000/tags#Angular" class="post-tag">Angular</a>
+          
+        
+      </div>
+      <h1>Angular学习中问题记录</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="http://localhost:4000" target="_blank" rel="author">Amos</a></></span>
+        <time class="post-meta-item" datetime="18-08-11"><i class="iconfont icon-date"></i>11 Aug 2018</time>
+      </div>
+    </div>
+    
+    <div class="filter"></div>
+      <div class="post-cover" style="background: url('https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=468115009,1670212890&fm=27&gp=0.jpg') center no-repeat; background-size: cover;"></div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h4 id="1-cannot-find-module-rxjs-compat">1. Cannot find module ‘rxjs-compat’</h4>
+
+<p>解决方法：<a href="https://github.com/angular/angular-cli/issues/9190">https://github.com/angular/angular-cli/issues/9190</a></p>
+
+<p>run following commond in terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   npm <span class="nb">install </span>rxjs@6.2.0 rxjs-compat@6.2.0 <span class="nt">--save</span>
+</code></pre></div></div>
+
+<h4 id="2-引入rxjsrx时报错-tslint-this-import-is-blacklisted-import-a-submodule-instead-import-blacklist">2. 引入rxjs/RX时报错： <code class="highlighter-rouge">[tslint] This import is blacklisted, import a submodule instead (import-blacklist)</code></h4>
+
+<blockquote>
+  <p>引入rxjs的子模块，在tslint中把rxjs/RX加入了黑名单了，会让包变大</p>
+</blockquote>
+
+<h4 id="3-ts-property-debouncetime-does-not-exist-on-type-observableany">3. <code class="highlighter-rouge">[ts] Property 'debounceTime' does not exist on type 'Observable&lt;any&gt;'.</code></h4>
+
+<p>引入如下模块</p>
+
+<blockquote>
+  <p>​import “rxjs/add/operator/map”;</p>
+
+  <p>import “rxjs/add/operator/debounceTime”;</p>
+</blockquote>
+
+<h4 id="4-cant-bind-to-ngmodel-since-it-isnt-a-known-property-of-input">4. <code class="highlighter-rouge">Can't bind to 'ngModel' since it isn't a known property of 'input'</code></h4>
+
+<p>解决办法：<a href="https://stackoverflow.com/questions/38892771/cant-bind-to-ngmodel-since-it-isnt-a-known-property-of-input">https://stackoverflow.com/questions/38892771/cant-bind-to-ngmodel-since-it-isnt-a-known-property-of-input</a></p>
+
+<p>如下</p>
+
+<blockquote>
+  <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">FormsModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/forms'</span><span class="p">;</span>
+
+<span class="p">[...]</span>
+
+<span class="p">@</span><span class="nd">NgModule</span><span class="p">({</span>
+  <span class="na">imports</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">[...]</span>
+    <span class="nx">FormsModule</span>
+  <span class="p">],</span>
+  <span class="p">[...]</span>
+<span class="p">})</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="5-ts-property-of-does-not-exist-on-type-typeof-observable">5. [ts] Property ‘of’ does not exist on type ‘typeof Observable’.</h4>
+
+<p><strong>for Angular &gt;= 6.0.0</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">import</span> <span class="p">{</span> <span class="k">of</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'rxjs'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>And its usage has been changed, you no longer call it off of Observable:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">of</span><span class="p">(</span><span class="s1">'token'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><a href="https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md#howto-convert-to-pipe-syntax">RxJS v5.x to v6 Update Guide - HowTo: Convert to pipe syntax</a> which uses <code class="highlighter-rouge">of()</code></p>
+
+<p><strong>for Angular &lt;= 5.x.xx</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">import</span> <span class="s1">'rxjs/add/observable/of'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>And it’s used as you have in your question</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="nx">Observable</span><span class="p">.</span><span class="k">of</span><span class="p">(</span><span class="s1">'token'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="6-error-cant-resolve-all-parameters-for-shoppinglistservice--">6. <code class="highlighter-rouge">Error: Can't resolve all parameters for ShoppingListService: (?, ?).</code></h4>
+
+<blockquote>
+  <p>一般是忘了在声明类的啥时候添加 @Injectable()</p>
+</blockquote>
+
+<h4 id="7---camera-image-not-displaying-in-ios">7.  ` Camera Image not displaying in iOS`</h4>
+
+<blockquote>
+  <p>解决方案：<a href="https://ionicframework.com/docs/wkwebview/">https://ionicframework.com/docs/wkwebview/ </a></p>
+</blockquote>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="nx">ionic</span> <span class="nx">cordova</span> <span class="nx">plugin</span> <span class="nx">remove</span> <span class="nx">cordova</span><span class="o">-</span><span class="nx">plugin</span><span class="o">-</span><span class="nx">ionic</span><span class="o">-</span><span class="nx">webview</span>
+   <span class="nx">ionic</span> <span class="nx">cordova</span> <span class="nx">platform</span> <span class="nx">remove</span> <span class="nx">ios</span> 
+   <span class="nx">ionic</span> <span class="nx">cordova</span> <span class="nx">platform</span>  <span class="nx">add</span> <span class="nx">ios</span> 
+</code></pre></div></div>
+
+
+    </article>
+
+    
+    <div class="social-share-wrapper">
+      <div class="social-share"></div>
+    </div>
+    
+  </div>
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="http://localhost:4000/assets/img/avatar.jpg" alt="">
+      </div>
+      <div class="author-name" rel="author">AmosLee</div>
+      <div class="bio">
+        <p>Frontend Deleloper, love creative</p>
+      </div>
+      
+      <ul class="sns-links">
+        
+        <li>
+          <a href="//weibo.com/lovecolcol" target="_blank">
+                    <i class="iconfont icon-weibo"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//juejin.im/user/57a6f434165abd006159b4cc" target="_blank">
+                    <i class="iconfont icon-juejin"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//www.instagram.com/steveliaocn" target="_blank">
+                    <i class="iconfont icon-instagram"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//github.com/kaeyleo" target="_blank">
+                    <i class="iconfont icon-github"></i>
+                </a>
+        </li>
+        
+      </ul>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+      <div class="read-next-item">
+        <a href="/2018/08/11/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E8%AE%B0%E5%BD%95.html" class="read-next-link"></a>
+        <section>
+          <span>初级算法解题思路记录</span>
+          <p>1. Two Sum</p>
+        </section>
+        
+        <div class="filter"></div>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534585425&di=a7b49beeb01bf3cd4a91850fca9a8600&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.chuansong.me%2Fmmbiz_jpg%2FGpZj81ob7ohUE662NAWombCFgAFzcRj91y5tG78pQ17y3SY45QSXvqGv7ApvKsUdPrgzfQQp5gtnOVeeic8libCA%2F640%3Fwx_fmt%3Djpeg" alt="">
+        
+     </div>
+      
+
+      
+    </section>
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+  </section>
+
+  <footer class="g-footer">
+  <section>Amos Jekyll Blog ©
+  
+  
+  2018
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
+</footer>
+
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+</body>
+
+</html>
