@@ -2,14 +2,14 @@
 title: 'Amos Jekyll Blog'
 description: 'Record my learning and reading.'
 keyword: 'Amos, iOS, Angular, ionic, js, css, web'
-url: 'https://amosbaby.github.io/amos-learing/' # your host
+url: 'https://amosbaby.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
 
 # Navigation links
 nav:
-  home: '/amos-learing'
+  home: '/'
   tags: '/tags.html'
 
 # Footer
